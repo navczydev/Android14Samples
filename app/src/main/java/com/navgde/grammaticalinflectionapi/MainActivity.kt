@@ -118,6 +118,7 @@ fun MainComposable(modifier: Modifier = Modifier) {
             text = stringResource(id = R.string.dear_cleint),
             style = TextStyle(fontWeight = FontWeight.ExtraBold, fontSize = 32.sp),
         )
+        AccessPhotoComposable()
     }
 }
 
