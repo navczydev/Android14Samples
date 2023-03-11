@@ -1,10 +1,11 @@
 package com.navgde.grammaticalinflectionapi
 
+import android.app.Activity
 import android.app.GrammaticalInflectionManager
-import android.content.Context
 import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -40,12 +41,11 @@ import androidx.compose.ui.unit.sp
 import com.navgde.grammaticalinflectionapi.ui.theme.GrammaticalInflectionAPITheme
 
 @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
-class MainActivity : ComponentActivity() {
-    private lateinit var context: Context
+class MainActivity : ComponentActivity(), Activity.ScreenCaptureCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        context = this
+
         setContent {
             GrammaticalInflectionAPITheme {
                 // A surface container using the 'background' color from the theme
@@ -54,6 +54,25 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        // Register callback to detect screenshot
+        registerScreenCaptureCallback(mainExecutor, this)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterScreenCaptureCallback(this)
+    }
+
+    companion object {
+        const val TAG = "MainActivity"
+    }
+
+    override fun onScreenCaptured() {
+        Log.d(TAG, "onCreate: Screenshot Done")
     }
 }
 
