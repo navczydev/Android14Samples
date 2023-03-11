@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="baker_job_title">Boulangère 👩‍🍳</string>
+    <string name="my_friend">Mon amie</string>
+    <string name="dear_cleint">Chère cliente 👩</string>
+    <string name="you_have_new_shoes">tu as de nouvelles chaussures</string>
+<!--
+Tu est studieuse
+
+Tu est studieux
+-->
+
+</resources>

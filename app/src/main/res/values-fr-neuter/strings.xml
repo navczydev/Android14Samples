@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Bonjour</string>
+    <string name="my_friend">Mon ami</string>
+    <string name="you_have_new_shoes">Nouvelles chaussures</string>
+</resources>

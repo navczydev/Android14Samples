@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">GrammaticalInflectionAPI</string>
+    <string name="app_name" translatable="false">GrammaticalInflectionAPI</string>
+    <string name="hello">Hello</string>
+    <string name="baker_job_title">Baker</string>
+    <string name="my_friend">My friend</string>
+    <string name="add_photo" translatable="false">Add Photo</string>
+    <string name="dear_cleint">Dear client</string>
+    <string name="you_have_new_shoes">You have new shoes</string>
+
+
 </resources>
