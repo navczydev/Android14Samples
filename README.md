@@ -13,4 +13,7 @@
 ## Regional preferences TODO
 
 
+![changing-preferences](https://user-images.githubusercontent.com/8358882/227070961-4d2fb536-93ca-4cfd-98d6-9cb6121e6bfa.gif)
+
+
 ## Screeshot detection TODO
