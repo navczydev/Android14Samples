@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrammaticalInflectionAPI"
         tools:targetApi="31">
+        <receiver
+            android:name=".LocaleReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
