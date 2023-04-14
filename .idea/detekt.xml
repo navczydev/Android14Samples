@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/detekt.yml" />
       </list>
     </option>
+    <option name="enableAllRules" value="true" />
     <option name="enableFormatting" value="true" />
   </component>
 </project>

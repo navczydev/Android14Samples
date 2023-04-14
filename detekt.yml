@@ -493,7 +493,7 @@ style:
       - "**/*.Test.kt"
       - "**/*.Spec.kt"
       - "**/*.Spek.kt"
-    ignoreNumbers: '-1,0,1,2'
+#    ignoreNumbers: [-1,0,1,2]
     ignoreHashCodeFunction: true
     ignorePropertyDeclaration: true
     ignoreConstantDeclaration: true
@@ -573,6 +573,8 @@ style:
   UnusedPrivateMember:
     active: false
     allowedNames: '(_|ignored|expected|serialVersionUID)'
+    ignoreAnnotated:
+      - "Preview"
   UseDataClass:
     active: false
     excludeAnnotatedClasses: ""
@@ -594,7 +596,7 @@ style:
       - "**/*.Spek.kt"
     excludeImports: 'java.util.*,kotlinx.android.synthetic.*'
 
-TwitterCompose:
+Compose:
   CompositionLocalAllowlist:
     active: true
     # You can optionally define a list of CompositionLocals that are allowed here
